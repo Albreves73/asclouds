@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - AsClouds</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const plan = params.get("plan");
+      const planDetails = {
+        monthly: {
+          name: "Monthly Plan",
+          price: "$8/month",
+          storage: "1 TB"
+        },
+        annual: {
+          name: "Annual Plan",
+          price: "$80/year",
+          storage: "1 TB"
+        }
+      };
+
+      const selected = planDetails[plan];
+      if (selected) {
+        document.getElementById("plan-name").textContent = selected.name;
+        document.getElementById("plan-price").textContent = selected.price;
+        document.getElementById("plan-storage").textContent = selected.storage;
+      } else {
+        document.getElementById("checkout-content").innerHTML = "<p>Invalid plan selected.</p>";
+      }
+    };
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>AsClouds</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="checkout-section">
+    <div id="checkout-content">
+      <h2>Confirm Your Purchase</h2>
+      <p><strong>Plan:</strong> <span id="plan-name"></span></p>
+      <p><strong>Price:</strong> <span id="plan-price"></span></p>
+      <p><strong>Storage:</strong> <span id="plan-storage"></span></p>
+      <button class="button">Complete Purchase</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AsClouds | Privacy | Terms</p>
+  </footer>
+
+</body>
+</html>
