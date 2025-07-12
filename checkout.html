@@ -5,33 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Checkout - AsClouds</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    window.onload = function() {
-      const params = new URLSearchParams(window.location.search);
-      const plan = params.get("plan");
-      const planDetails = {
-        monthly: {
-          name: "Monthly Plan",
-          price: "$8/month",
-          storage: "1 TB"
-        },
-        annual: {
-          name: "Annual Plan",
-          price: "$80/year",
-          storage: "1 TB"
-        }
-      };
-
-      const selected = planDetails[plan];
-      if (selected) {
-        document.getElementById("plan-name").textContent = selected.name;
-        document.getElementById("plan-price").textContent = selected.price;
-        document.getElementById("plan-storage").textContent = selected.storage;
-      } else {
-        document.getElementById("checkout-content").innerHTML = "<p>Invalid plan selected.</p>";
-      }
-    };
-  </script>
 </head>
 <body>
 
@@ -46,13 +19,32 @@
   </header>
 
   <section class="checkout-section">
-    <div id="checkout-content">
-      <h2>Confirm Your Purchase</h2>
-      <p><strong>Plan:</strong> <span id="plan-name"></span></p>
-      <p><strong>Price:</strong> <span id="plan-price"></span></p>
-      <p><strong>Storage:</strong> <span id="plan-storage"></span></p>
-      <button class="button">Complete Purchase</button>
-    </div>
+    <h2>Complete Your Purchase</h2>
+    <form class="purchase-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="plan">Select Plan:</label>
+      <select id="plan" name="plan" required>
+        <option value="">-- Choose a Plan --</option>
+        <option value="monthly">$8/month – 1 TB Storage</option>
+        <option value="annual">$80/year – 1 TB Storage</option>
+      </select>
+
+      <label for="card">Card Number:</label>
+      <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required />
+
+      <label for="expiry">Expiry Date:</label>
+      <input type="month" id="expiry" name="expiry" required />
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" maxlength="4" required />
+
+      <button type="submit" class="button">Confirm Purchase</button>
+    </form>
   </section>
 
   <footer>
