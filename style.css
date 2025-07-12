@@ -216,3 +216,32 @@ footer {
   font-size: 1.1em;
   margin: 10px 0;
 }
+
+.purchase-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.purchase-form label {
+  font-weight: bold;
+}
+
+.purchase-form input,
+.purchase-form select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.purchase-form button {
+  background-color: #153d77;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
