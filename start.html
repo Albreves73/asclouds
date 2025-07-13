@@ -74,3 +74,20 @@
 <footer>
   <p>&copy; 2025 AsClouds | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
 </footer>
+
+  <script>
+  function showFullForm() {
+    const emailValue = document.getElementById("emailInput").value;
+    if (emailValue.trim() === "") {
+      alert("Please enter your email first.");
+      return;
+    }
+
+    document.getElementById("emailForm").style.display = "none";
+    document.getElementById("fullForm").style.display = "flex";
+    document.getElementById("emailFull").value = emailValue;
+  }
+</script>
+
+</body>
+</html>
