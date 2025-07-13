@@ -43,14 +43,31 @@
     </div>
 
     <div class="trial-form-box">
-      <form class="trial-form">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+  <!-- Formulário inicial -->
+  <form id="emailForm" class="trial-form">
+    <label for="email">Email Address</label>
+    <input type="email" id="emailInput" name="email" required>
 
-        <button type="submit" class="button">Create My Free Account</button>
-        <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
-      </form>
-    </div>
+    <button type="button" class="button" onclick="showFullForm()">Create My Free Account</button>
+    <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
+  </form>
+
+  <!-- Formulário completo (inicialmente oculto) -->
+  <form id="fullForm" class="trial-form" style="display: none;">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="emailFull">Email Address</label>
+    <input type="email" id="emailFull" name="email" required>
+
+    <label for="password">Create Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit" class="button">Finish Account Setup</button>
+    <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
+  </form>
+</div>
+
   </div> <!-- ✅ fecha o container corretamente -->
 </section>
 
