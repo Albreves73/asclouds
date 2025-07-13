@@ -169,3 +169,59 @@ footer {
   background-color: #1f4e99;
 }
 
+.form-section {
+  padding: 60px 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* espaçamento entre os campos */
+}
+
+.trial-form label {
+  font-weight: bold;
+  color: #153d77;
+}
+
+.trial-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.trial-form button {
+  background-color: #153d77;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trial-form button:hover {
+  background-color: #1f4e99;
+}
+
+.terms {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #153d77;
+  text-decoration: underline;
+}
