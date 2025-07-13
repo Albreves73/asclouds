@@ -94,11 +94,12 @@ footer {
 .form-section {
   padding: 60px 20px;
   max-width: 500px;
-  margin: auto;
+  margin: 40px auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 
  .button {
