@@ -261,7 +261,7 @@ footer {
 .trial-description {
   background-color: #ffffff;
   padding: 60px 20px;
-  text-align: left;
+  text-align: center;
   max-width: 800px;
   margin: auto;
 }
@@ -276,13 +276,29 @@ footer {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .trial-description ul {
-  padding-left: 20px;
-  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
 }
 
 .trial-description li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.trial-description li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #153d77;
+  font-weight: bold;
 }
