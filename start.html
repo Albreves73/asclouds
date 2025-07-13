@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Start Free Trial - AsClouds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +13,7 @@
       <h1>AsClouds</h1>
       <nav>
         <a href="index.html">Home</a>
-        <a href="#backup">Backup</a>
-        <a href="#storage">Storage</a>
-        <a href="#hosting">Hosting</a>
-        <a href="#security">Security</a>
+        <a href="plans.html">Plans</a>
       </nav>
     </div>
   </header>
@@ -23,19 +21,22 @@
   <section class="hero">
     <div class="hero-content">
       <h2>Start Your Free Trial</h2>
-      <p>Fill out the form below to get started with your AsClouds cloud services.</p>
+      <p>Experience secure, unlimited cloud backup with AsClouds. No credit card required. Just peace of mind.</p>
     </div>
   </section>
 
   <section class="form-section">
     <form class="trial-form">
-      <label for="name">Full Name:</label>
+      <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email">Email Address:</label>
+      <label for="email">Email Address</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="service">Select Service:</label>
+      <label for="password">Create Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="service">Select Service</label>
       <select id="service" name="service">
         <option>Cloud Backup</option>
         <option>Secure Storage</option>
@@ -43,7 +44,8 @@
         <option>All-in-One Package</option>
       </select>
 
-      <button type="submit">Submit</button>
+      <button type="submit" class="button">Create Account</button>
+      <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
     </form>
   </section>
 
