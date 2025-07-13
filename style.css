@@ -236,6 +236,7 @@ footer {
 .plans-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   flex-wrap: wrap;
   max-width: 900px;
@@ -250,18 +251,9 @@ footer {
   width: 300px;
   text-align: center;
   transition: transform 0.2s;
+  flex: 0 0 300px;
 }
 
 .plan-card:hover {
   transform: translateY(-5px);
-}
-
-.plan-card h3 {
-  color: #153d77;
-  margin-top: 0;
-}
-
-.plan-card p {
-  margin: 10px 0;
-  font-size: 1rem;
 }
