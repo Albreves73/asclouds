@@ -308,3 +308,17 @@ footer a {
   color: #153d77;
   text-decoration: underline;
 }
+
+.footer-slim {
+  background-color: #153d77;
+  color: white;
+  text-align: center;
+  padding: 8px 20px; /* faixa azul mais fina */
+  font-size: 0.85rem;
+}
+
+.footer-slim a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 5px;
+}
