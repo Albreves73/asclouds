@@ -119,3 +119,42 @@ footer {
 .button:hover {
   background-color: #1f4e99;
 }
+
+.hero-content h2 {
+  font-size: 2.2rem;
+  color: #153d77;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.trial-form button {
+  background-color: #153d77;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trial-form button:hover {
+  background-color: #1f4e99;
+}
+
+.terms {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.terms a {
+  color: #153d77;
+  text-decoration: underline;
+}
