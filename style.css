@@ -206,6 +206,11 @@ footer {
   align-items: flex-start;
 }
 
+.trial-info, .trial-form-box {
+  flex: 1;
+  min-width: 300px;
+}
+
 .trial-info {
   flex: 1;
   min-width: 300px;
