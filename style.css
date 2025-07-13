@@ -132,6 +132,27 @@ footer {
   margin: 0 auto 20px;
 }
 
+.trial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* espaçamento entre os campos */
+}
+
+.trial-form label {
+  font-weight: bold;
+  color: #153d77;
+}
+
+.trial-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .trial-form button {
   background-color: #153d77;
   color: white;
@@ -148,13 +169,3 @@ footer {
   background-color: #1f4e99;
 }
 
-.terms {
-  font-size: 0.9em;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.terms a {
-  color: #153d77;
-  text-decoration: underline;
-}
