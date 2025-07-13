@@ -257,3 +257,32 @@ footer {
 .plan-card:hover {
   transform: translateY(-5px);
 }
+
+.trial-description {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.trial-description h3 {
+  color: #153d77;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.trial-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.trial-description ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.trial-description li {
+  margin-bottom: 8px;
+}
