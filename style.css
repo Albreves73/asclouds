@@ -226,3 +226,42 @@ footer {
   color: #153d77;
   text-decoration: underline;
 }
+
+.plans-section {
+  padding: 60px 20px;
+  background-color: #dbe9ff;
+  text-align: center;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.plan-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h3 {
+  color: #153d77;
+  margin-top: 0;
+}
+
+.plan-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
