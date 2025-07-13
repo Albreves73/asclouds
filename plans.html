@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plans - AsClouds</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Plans - asclouds</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Cabeçalho -->
   <header>
-    <h1>AsClouds</h1>
+    <div class="container">
+      <h1>asclouds</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="grid">
-    <div class="card highlight">
-      <h2>Choose Your Plan</h2>
-      <p>Select the best option for your cloud needs. All plans include 1 TB of secure storage.</p>
+  <!-- Seção dos planos -->
+  <section class="plans-section">
+    <h2>Choose Your Plan</h2>
+    <div class="plans-container">
+      <div class="plan-card">
+        <h3>Monthly Plan</h3>
+        <p><strong>$8/month</strong></p>
+        <p>100 GB Storage</p>
+        <button class="button">Subscribe Monthly</button>
+      </div>
+      <div class="plan-card">
+        <h3>Annual Plan</h3>
+        <p><strong>$80/year</strong></p>
+        <p>1 TB Storage</p>
+        <button class="button">Subscribe Annually</button>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Monthly Plan</h3>
-      <p><strong>$8/month</strong></p>
-      <p>1 TB Storage</p>
-      <p>Fast recovery, AES-256 encryption</p>
-      <a href="checkout.html" class="button">Subscribe Monthly</a>
-    </div>
-
-    <div class="card">
-      <h3>Annual Plan</h3>
-      <p><strong>$80/year</strong></p>
-      <p>1 TB Storage</p>
-      <p>Priority support, enhanced security</p>
-      <a href="checkout.html" class="button">Subscribe Annually</a>
-    </div>
-  </main>
-
+  <!-- Rodapé -->
   <footer>
-    &copy; 2025 AsClouds | All rights reserved
+    <p>&copy; 2025 asclouds | Privacy | Terms</p>
   </footer>
-
 </body>
 </html>
