@@ -71,19 +71,28 @@
 
 </section>
 
+</div> <!-- fecha .trial-form-box -->
+</div> <!-- fecha .container.two-column -->
+</section> <!-- fecha .trial-layout -->
+
 <footer>
   <p>&copy; 2025 AsClouds | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
 </footer>
 
-  <script>
+<script>
+  function showFullForm() {
+    document.getElementById("emailForm").style.display = "none";
+    document.getElementById("fullForm").style.display = "block";
+  }
+
   function redirectToNextcloud() {
-    const email = document.getElementById("emailInput").value.trim();
+    const email = document.getElementById("emailFull").value.trim();
     if (email === "") {
       alert("Please enter your email.");
       return;
     }
 
-    // Redireciona para a página de criação de conta do Nextcloud
+    // Redireciona para a página personalizada
     window.location.href = "nextcloud.html";
   }
 </script>
