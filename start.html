@@ -25,78 +25,72 @@
     </div>
   </section>
 
-<section class="trial-layout">
-  <div class="container two-column">
-    <div class="trial-info">
-      <h3>What’s Included in Your Free Trial</h3>
-      <p>
-        Enjoy 7 days of secure cloud storage with 1 TB of encrypted space — absolutely free. 
-        Upload, organize, and access your files from any device. No credit card required.
-      </p>
-      <ul>
-        <li> 1 TB of secure storage</li>
-        <li> AES-256 encryption</li>
-        <li> High-speed access</li>
-        <li> Desktop & mobile support</li>
-        <li> Easy file sharing</li>
-      </ul>
+  <section class="trial-layout">
+    <div class="container two-column">
+      <div class="trial-info">
+        <h3>What’s Included in Your Free Trial</h3>
+        <p>
+          Enjoy 7 days of secure cloud storage with 1 TB of encrypted space — absolutely free. 
+          Upload, organize, and access your files from any device. No credit card required.
+        </p>
+        <ul>
+          <li>1 TB of secure storage</li>
+          <li>AES-256 encryption</li>
+          <li>High-speed access</li>
+          <li>Desktop & mobile support</li>
+          <li>Easy file sharing</li>
+        </ul>
+      </div>
+
+      <div class="trial-form-box">
+        <!-- Initial form -->
+        <form id="emailForm" class="trial-form">
+          <label for="email">Email Address</label>
+          <input type="email" id="emailInput" name="email" required>
+
+          <button type="button" class="button" onclick="showFullForm()">Create My Free Account</button>
+          <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
+        </form>
+
+        <!-- Full form (initially hidden) -->
+        <form id="fullForm" class="trial-form" style="display: none;">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="emailFull">Email Address</label>
+          <input type="email" id="emailFull" name="email" required>
+
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="button" class="button" onclick="redirectToNextcloud()">Create My Free Account</button>
+          <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
+        </form>
+      </div>
     </div>
+  </section>
 
-    <div class="trial-form-box">
-  <!-- Formulário inicial -->
-  <form id="emailForm" class="trial-form">
-    <label for="email">Email Address</label>
-    <input type="email" id="emailInput" name="email" required>
+  <footer>
+    <p>&copy; 2025 AsClouds | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+  </footer>
 
-    <button type="button" class="button" onclick="showFullForm()">Create My Free Account</button>
-    <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
-  </form>
-
-  <!-- Formulário completo (inicialmente oculto) -->
-  <form id="fullForm" class="trial-form" style="display: none;">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="emailFull">Email Address</label>
-    <input type="email" id="emailFull" name="email" required>
-
-    <label for="password">Create Password</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="button" class="button" onclick="redirectToNextcloud()">Create My Free Account</button>
-    <p class="terms">By creating an account, you agree to our <a href="#">Terms of Service</a>.</p>
-  </form>
-</div>
-
-
-</section>
-
-</div> <!-- fecha .trial-form-box -->
-</div> <!-- fecha .container.two-column -->
-</section> <!-- fecha .trial-layout -->
-
-<footer>
-  <p>&copy; 2025 AsClouds | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
-</footer>
-
-<script>
-  function showFullForm() {
-    document.getElementById("emailForm").style.display = "none";
-    document.getElementById("fullForm").style.display = "block";
-  }
-
-  function redirectToNextcloud() {
-    const email = document.getElementById("emailFull").value.trim();
-    if (email === "") {
-      alert("Please enter your email.");
-      return;
+  <script>
+    function showFullForm() {
+      document.getElementById("emailForm").style.display = "none";
+      document.getElementById("fullForm").style.display = "block";
     }
 
-    // Redireciona para a página personalizada
-    window.location.href = "nextcloud.html";
-  }
-</script>
+    function redirectToNextcloud() {
+      const email = document.getElementById("emailFull").value.trim();
+      if (email === "") {
+        alert("Please enter your email.");
+        return;
+      }
+
+      // Redirect to your personalized Nextcloud page
+      window.location.href = "nextcloud.html";
+    }
+  </script>
 
 </body>
 </html>
-
