@@ -84,31 +84,29 @@
   </footer>
 
   <script>
-    function showFullForm() {
-      const email = document.getElementById("emailInput").value.trim();
-      if (email === "") {
-        alert("Please enter your email.");
-        return;
-      }
-
-      // Fill the second form with the email
-      document.getElementById("emailFull").value = email;
-
-      // Show full form
-      document.getElementById("emailForm").style.display = "none";
-      document.getElementById("fullForm").style.display = "flex";
+  function showFullForm() {
+    const email = document.getElementById("emailInput").value.trim();
+    if (email === "") {
+      alert("Please enter your email.");
+      return;
     }
 
-    function redirectToNextcloud() {
-      const email = document.getElementById("emailFull").value.trim();
-      if (email === "") {
-        alert("Please enter your email.");
-        return;
-      }
+    document.getElementById("emailFull").value = email;
+    document.getElementById("emailForm").style.display = "none";
+    document.getElementById("fullForm").style.display = "flex";
+  }
 
-      window.location.href = "nextcloud.html";
+  function redirectToNextcloud() {
+    const email = document.getElementById("emailFull").value.trim();
+    if (email === "") {
+      alert("Please enter your email.");
+      return;
     }
-  </script>
+
+    window.location.href = "nextcloud.html";
+  }
+</script>
+
 
 </body>
 </html>
